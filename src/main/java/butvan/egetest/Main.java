@@ -27,7 +27,7 @@ public class Main {
                 found = true;
                 break;
             }
-            if (!tdEls.get(12).html().trim().equals("Р”Р°"))
+            if (!tdEls.get(12).html().trim().equals("Да"))
                 continue;
             if (Integer.valueOf(tdEls.get(5).html()) == 1)
                 origWithPriorityCount++;
@@ -36,10 +36,10 @@ public class Main {
 
         if (found) {
             System.out.println(fio);
-            System.out.println("РњРµСЃС‚Рѕ РІ СЃРїРёСЃРєРµ СЃРґР°РІС€РёС… РѕСЂРёРіРёРЅР°Р»: " + origCount);
-            System.out.println("РњРµСЃС‚Рѕ РІ СЃРїРёСЃРєРµ СЃРґР°РІС€РёС… РѕСЂРёРіРёРЅР°Р» c РїСЂРёРѕСЂРёС‚РµС‚РѕРј 1: " + origWithPriorityCount);
+            System.out.println("Место в списке сдавших оригинал: " + origCount);
+            System.out.println("Место в списке сдавших оригинал c приоритетом 1: " + origWithPriorityCount);
         } else {
-            System.out.println("РђР±РёС‚СѓСЂРёРµРЅС‚ СЃ РёРґРµРЅС‚РёС„РёРєР°С‚РѕРј " + enrolleeId + " РЅРµ РЅР°Р№РґРµРЅ");
+            System.out.println("Абитуриент с идентификатом " + enrolleeId + " не найден");
         }
     }
 }
