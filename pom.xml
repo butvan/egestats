@@ -57,7 +57,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <finalName>egetest</finalName>
+                    <finalName>egestats</finalName>
                     <descriptorRefs>
                         <descriptorRef>jar-with-dependencies</descriptorRef>
                     </descriptorRefs>
