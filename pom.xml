@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>butvan</groupId>
-    <artifactId>egetest</artifactId>
+    <artifactId>egestats</artifactId>
     <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>
 
-    <name>egetest</name>
+    <name>egestats</name>
     <url>https://github.com/butvan/egestats</url>
 
     <properties>
@@ -36,16 +36,6 @@
                 </configuration>
             </plugin>
             <plugin>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>3.0.2</version>
-                <executions>
-                    <execution>
-                        <id>default-jar</id>
-                        <phase>none</phase>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
                 <artifactId>maven-assembly-plugin</artifactId>
                 <version>2.6</version>
                 <executions>
@@ -63,10 +53,9 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>butvan.egetest.Main</mainClass>
+                            <mainClass>butvan.egestats.Main</mainClass>
                         </manifest>
                     </archive>
-                    <appendAssemblyId>false</appendAssemblyId>
                 </configuration>
             </plugin>
         </plugins>
