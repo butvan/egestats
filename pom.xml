@@ -53,7 +53,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>butvan.egestats.Main</mainClass>
+                            <mainClass>egestats.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
